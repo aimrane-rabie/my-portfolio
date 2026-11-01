@@ -25,8 +25,8 @@ export default function Hero() {
   }, []);
   return (
     <>
-      <section className="hero w-full flex flex-wrap  sm:px-5 px-1 py-4 font-body">
-        <div className="flex flex-col gap-6 w-full md:w-[55%]">
+      <section className="hero w-full flex flex-wrap  sm:px-5 px-2 md:px-10 py-2 font-body ">
+        <div className="flex flex-col gap-6 lg:gap-10 w-full md:w-[55%]">
           <span className="status flex items-center  sm:gap-2 gap-1 w-full sm:w-fit bg-surface py-1 px-1 sm:py-1 sm:px-2 rounded-full text-sm text-ink font-light border border-line">
             <span className="relative flex size-2 items-center">
               <span className="absolute inline-flex size-full rounded-full bg-orange-400 opacity-75 animate-[ping_2.4s_ease-in-out_infinite]"></span>
@@ -34,7 +34,7 @@ export default function Hero() {
             </span>
             Available for Internship - Casablanca,Morocco
           </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl w-full text-ink font-semibold font-heading">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl xl:text-[5.6rem] w-full text-ink font-semibold font-heading">
             Aimrane Rabie <br></br>
             <em className="text-primary">
               Full-Stack <br className="hidden md:block" /> Developer
@@ -44,7 +44,7 @@ export default function Hero() {
             I build fast, accessible web apps that solve real business problems.
           </p>
           <div className="cta flex flex-col sm:flex-row gap-4 md:text-xl">
-            <button className=" flex items-center gap-2 bg-primary text-ink rounded-full py-2 px-4 transition-trnasform hover:-translate-y-0.25 ease-in-out duration-300 cursor-pointer font-semibold">
+            <a href="#projects" className=" flex items-center justify-center gap-2 bg-primary text-ink rounded-full py-2 px-4 transition-trnasform hover:-translate-y-0.25 ease-in-out duration-300 cursor-pointer font-semibold">
               View Projects
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export default function Hero() {
                   d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
                 />
               </svg>
-            </button>
+            </a>
             <button className="border border-line hover:border-primary bg-surface text-ink rounded-full py-2 px-5 transition-trnasform hover:-translate-y-0.25 ease-in-out duration-300 cursor-pointer font-semibold">
               Contact
             </button>
@@ -130,13 +130,22 @@ export default function Hero() {
         </div>
         <div className="hero-avis relative flex w-full md:w-[40%] h-[630px] justify-center items-center ">
           <div
-            className="relative z-1 h-[580px] w-[460px] aspect-[4/5]  overflow-hidden rounded-[28px] border border-line
-                bg-[repeating-linear-gradient(135deg,var(--surface-2)_0_14px,var(--surface)_14px_28px)]"
+            className="relative z-1
+    w-full max-w-[460px]
+    aspect-[4/5]
+    mx-auto
+    overflow-hidden rounded-[28px]
+    border border-line
+    bg-[repeating-linear-gradient(135deg,var(--surface-2)_0_14px,var(--surface)_14px_28px)]
+  "
           >
             <img
               src={`${isDark ? "me-darkMode.png" : "me.png"}`}
               alt="[Your Name], full-stack developer"
-              className="absolute  bottom-0 left-1/2 h-[92%] -translate-x-1/2 object-contain"
+              className="absolute bottom-0 left-1/2
+      h-[92%] max-w-none
+      -translate-x-1/2
+      object-contain"
             />
           </div>
 

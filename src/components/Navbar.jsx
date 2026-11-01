@@ -137,7 +137,7 @@ export default function Navbar() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="size-5 transition-transform duration-500 hover:rotate-30"
+                className="size-5 transition-transform duration-500 hover:rotate-30 text-ink"
               >
                 <path
                   stroke-linecap="round"
@@ -150,7 +150,7 @@ export default function Navbar() {
         </div>
         <div
           style={{ display: listOpen ? "" : "none" }}
-          className=" w-[95%] rounded-xl h-[300px]  bg-background p-3 mb-10 flex flex-col gap-3 md:hidden"
+          className=" w-[95%] rounded-xl h-[300px]  bg-background p-3 mb-10 flex flex-col gap-3 md:hidden "
         >
           <button
             onClick={() => setDarkMode(!darkMode)}
@@ -178,7 +178,7 @@ export default function Navbar() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="white"
-                className="size-5 transition-transform duration-500 hover:rotate-40"
+                className="size-5 transition-transform duration-500 hover:rotate-40 "
               >
                 <path
                   stroke-linecap="round"

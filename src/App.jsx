@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
+import Projects from "./components/Projects.jsx"
 function App() {
 
 
@@ -9,6 +10,7 @@ function App() {
       <div className='bg-background'>
         <Navbar/>
         <Hero/>
+        <Projects/>
 
       </div>
   )
