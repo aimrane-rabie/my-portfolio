@@ -1,6 +1,6 @@
 import './App.css'
 import Navbar from './components/Navbar.jsx'
-// import Hero from './components/Hero.jsx'
+import Hero from './components/Hero.jsx'
 function App() {
 
 
@@ -8,7 +8,7 @@ function App() {
     
       <div className='bg-background'>
         <Navbar/>
-        {/* <Hero/> */}
+        <Hero/>
 
       </div>
   )
