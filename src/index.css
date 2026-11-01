@@ -1,3 +1,53 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #F7F8FA;
+  --surface: #FFFFFF;
+  --surface-2: #EEF0F4;
+  --ink: #0F1419;
+  --muted: #4B5563;
+  --line: #DFE3EA;
+  --primary: #2540D9;
+  --on-primary: #FFFFFF;
+  --primary-soft: #E7EBFF;
+  --accent: #E8590C;
+  --error: #B42318;
+  --success: #0B7A43;
+}
+
+.dark {
+  --background: #0B0E14;
+  --surface: #131824;
+  --surface-2: #1B2132;
+  --ink: #EEF1F6;
+  --muted: #A3ACBD;
+  --line: #242B3D;
+  --primary: #8EA2FF;
+  --on-primary: #0B0E14;
+  --primary-soft: #1C2347;
+  --accent: #FFB454;
+  --error: #FF9A90;
+  --success: #5FD39A;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-soft: var(--primary-soft);
+  --color-accent: var(--accent);
+  --color-error: var(--error);
+  --color-success: var(--success);
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+}
