@@ -15,6 +15,7 @@
   --accent: #E8590C;
   --error: #B42318;
   --success: #0B7A43;
+  --tab:#fdfdfd;
 }
 
 .dark {
@@ -30,6 +31,7 @@
   --accent: #FFB454;
   --error: #FF9A90;
   --success: #5FD39A;
+  --tab:#A3ACBD;
 }
 
 @theme inline {
@@ -45,9 +47,16 @@
   --color-accent: var(--accent);
   --color-error: var(--error);
   --color-success: var(--success);
+  --color-tab: var(--tab);
 
   --font-heading: "Space Grotesk", sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 
   --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+  
+   --animate-marquee: marquee 60s linear infinite;
+
+  @keyframes marquee {
+    to { transform: translateX(-50%); }
+  }
 }

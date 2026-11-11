@@ -196,28 +196,29 @@ const note = (name, where) => `[One line: how you used ${name} in ${where}.]`;
 
 export const skills = [
   // Frontend
-  { id: "html", name: "HTML", icon: "html5", category: "frontend", level: "daily", project: "snipvault", note: note("HTML", "SnipVault"), brand: "#E34F26" },
-  { id: "css", name: "CSS", icon: "css3", category: "frontend", level: "daily", project: "snipvault", note: note("CSS", "SnipVault"), brand: "#1572B6" },
-  { id: "js", name: "JavaScript", icon: "javascript", category: "frontend", level: "daily", project: "snipvault", note: note("JavaScript", "SnipVault"), brand: "#C99A00" },
-  { id: "react", name: "React", icon: "react", category: "frontend", level: "comfortable", project: "snipvault", note: note("React", "SnipVault"), brand: "#00A3C4" },
-  { id: "tailwind", name: "Tailwind CSS", icon: "tailwindcss", category: "frontend", level: "daily", project: "snipvault", note: note("Tailwind CSS", "SnipVault"), brand: "#06B6D4" },
-
+  { id: "html", name: "HTML", icon: "html5", category: "frontend", level: "daily", usage: "Semantic, accessible page structure.", project: "snipvault", note: note("HTML", "SnipVault"), brand: "#E34F26" },
+  { id: "css", name: "CSS", icon: "css3", category: "frontend", level: "daily", usage: "Responsive layouts with Flexbox and Grid.", project: "snipvault", note: note("CSS", "SnipVault"), brand: "#1572B6" },
+  { id: "js", name: "JavaScript", icon: "javascript", category: "frontend", level: "daily", usage: "Interactivity, data handling and async logic.", project: "snipvault", note: note("JavaScript", "SnipVault"), brand: "#C99A00" },
+  { id: "react", name: "React", icon: "react", category: "frontend", level: "comfortable", usage: "Reusable components, state and hooks.", project: "snipvault", note: note("React", "SnipVault"), brand: "#00A3C4" },
+  { id: "tailwind", name: "Tailwind CSS", icon: "tailwindcss", category: "frontend", level: "daily", usage: "Fast, consistent styling with a design-token theme.", project: "snipvault", note: note("Tailwind CSS", "SnipVault"), brand: "#06B6D4" },
+ 
   // Backend
-  { id: "node", name: "Node.js", icon: "nodedotjs", category: "backend", level: "comfortable", project: "snipvault", note: note("Node.js", "SnipVault"), brand: "#5FA04E" },
-  { id: "express", name: "Express", icon: "express", category: "backend", level: "comfortable", project: "quizlab", note: note("Express", "QuizLab"), brand: "currentColor" },
-  { id: "php", name: "PHP", icon: "php", category: "backend", level: "comfortable", project: null, note: "[One line: what you built with PHP.]", brand: "#777BB4" },
-  { id: "rest", name: "REST APIs", icon: "postman", category: "backend", level: "comfortable", project: "quizlab", note: note("REST APIs", "QuizLab"), brand: "#FF6B35" },
-  { id: "jwt", name: "JWT Auth", icon: "jsonwebtokens", category: "backend", level: "learning", project: "snipvault", note: note("JWT", "SnipVault"), brand: "#D63AFF" },
-
+  { id: "node", name: "Node.js", icon: "nodedotjs", category: "backend", level: "comfortable", usage: "Running the server-side JavaScript runtime.", project: "snipvault", note: note("Node.js", "SnipVault"), brand: "#5FA04E" },
+  { id: "express", name: "Express", icon: "express", category: "backend", level: "comfortable", usage: "Routing, middleware and REST endpoints.", project: "quizlab", note: note("Express", "QuizLab"), brand: "currentColor" },
+  { id: "php", name: "PHP", icon: "php", category: "backend", level: "comfortable", usage: "Server-side pages and form handling.", project: null, note: "[One line: what you built with PHP.]", brand: "#777BB4" },
+  { id: "rest", name: "REST APIs", icon: "postman", category: "backend", level: "comfortable", usage: "Designing and testing clean API endpoints.", project: "quizlab", note: note("REST APIs", "QuizLab"), brand: "#FF6B35" },
+  { id: "jwt", name: "JWT Auth", icon: "jsonwebtokens", category: "backend", level: "learning", usage: "Login, protected routes and role checks.", project: "snipvault", note: note("JWT", "SnipVault"), brand: "#D63AFF" },
+ 
   // Databases
-  { id: "mongo", name: "MongoDB", icon: "mongodb", category: "databases", level: "comfortable", project: "snipvault", note: note("MongoDB", "SnipVault"), brand: "#47A248" },
-  { id: "mysql", name: "MySQL", icon: "mysql", category: "databases", level: "comfortable", project: null, note: "[One line: what you built with MySQL.]", brand: "#4479A1" },
-
+  { id: "mongo", name: "MongoDB", icon: "mongodb", category: "databases", level: "comfortable", usage: "Storing documents, queries and indexes.", project: "snipvault", note: note("MongoDB", "SnipVault"), brand: "#47A248" },
+  { id: "mysql", name: "MySQL", icon: "mysql", category: "databases", level: "comfortable", usage: "Relational tables, joins and queries.", project: null, note: "[One line: what you built with MySQL.]", brand: "#4479A1" },
+ 
   // Tools
-  { id: "git", name: "Git & GitHub", icon: "github", category: "devops", level: "daily", project: "snipvault", note: note("Git & GitHub", "SnipVault"), brand: "#F05032" },
-  { id: "vercel", name: "Vercel", icon: "vercel", category: "devops", level: "learning", project: "snipvault", note: note("Vercel", "SnipVault"), brand: "currentColor" },
-  { id: "render", name: "Render", icon: "render", category: "devops", level: "learning", project: "snipvault", note: note("Render", "SnipVault"), brand: "currentColor" },
+  { id: "git", name: "Git & GitHub", icon: "github", category: "devops", level: "daily", usage: "Version control, branches and pull requests.", project: "snipvault", note: note("Git & GitHub", "SnipVault"), brand: "#F05032" },
+  { id: "vercel", name: "Vercel", icon: "vercel", category: "devops", level: "learning", usage: "Deploying and previewing the frontend.", project: "snipvault", note: note("Vercel", "SnipVault"), brand: "currentColor" },
+  { id: "render", name: "Render", icon: "render", category: "devops", level: "learning", usage: "Hosting the API and environment variables.", project: "snipvault", note: note("Render", "SnipVault"), brand: "currentColor" },
 ];
+
 
 // ---------------------------------------------------------------------------
 // About

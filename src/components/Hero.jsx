@@ -44,7 +44,10 @@ export default function Hero() {
             I build fast, accessible web apps that solve real business problems.
           </p>
           <div className="cta flex flex-col sm:flex-row gap-4 md:text-xl">
-            <a href="#projects" className=" flex items-center justify-center gap-2 bg-primary text-ink rounded-full py-2 px-4 transition-trnasform hover:-translate-y-0.25 ease-in-out duration-300 cursor-pointer font-semibold">
+            <a
+              href="#projects"
+              className=" flex items-center justify-center gap-2 bg-primary text-ink rounded-full py-2 px-4 transition-trnasform hover:-translate-y-0.25 ease-in-out duration-300 cursor-pointer font-semibold"
+            >
               View Projects
               <svg
                 xmlns="http://www.w3.org/2000/svg"
