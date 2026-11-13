@@ -229,10 +229,10 @@ export const about = {
     "[One sentence on how you think: how you break a problem down, and what you care about when you ship.]",
   ],
   facts: [
-    { label: "Based in", value: "[City, Country]" },
+    { label: "Based in", value: "Casablanca, Morocco"},
     { label: "Focus", value: "MERN stack, PHP and MySQL" },
     { label: "Looking for", value: "Internship, then long-term work" },
-    { label: "Languages", value: "[Arabic, English, ...]" },
+    { label: "Languages", value: "Arabic, English" },
   ],
 };
 
