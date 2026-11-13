@@ -245,16 +245,16 @@ export const experience = [
   {
     id: "exp-1",
     type: "Education",
-    when: "[Year] — [Year]",
-    title: "[Degree or training program] · [Institution]",
-    description: "[What you studied and what you built there.]",
+    when: "2025 — 2027",
+    title: "Full-Stack Web Development · OFPPT",
+    description: "Studying HTML, CSS, JavaScript, PHP, MySQL and the MERN stack, with hands-on projects.",
   },
   {
     id: "exp-2",
-    type: "Certification",
-    when: "[Year]",
-    title: "[Certification name] · [Issuer]",
-    description: "[One line on what it covered.]",
+    type: "Self-directed",
+    when: "2026 — Present",
+    title: "Building SnipVault, QuizLab and an online shop",
+    description: "Three full-stack projects to practise API design, authentication and deployment.",
   },
 ];
 
